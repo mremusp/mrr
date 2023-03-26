@@ -6,6 +6,9 @@ function Accordion({ items }) {
 
     const handleClick = (nextIndex) => {
         setExpandedIndex(current => {
+            // this is a functional state update, "current" represents the most up to date state, 
+            // basically it makes sure other state changes were already done when executing
+            // or it 'await's to be done with the state
             if (current === nextIndex) {
                 return -1;
             } else {
