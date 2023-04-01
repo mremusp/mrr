@@ -4,7 +4,7 @@ import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
 function ButtonPage() {
     const handleClickFirst = () => {
         console.log('clicked on first')
-    }
+    };
 
     return (
         <div>
